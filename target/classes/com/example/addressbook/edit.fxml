@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="489.0" style="-fx-background-color: A999B0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.addressbook.EditController">
    <children>
-      <TextField layoutX="100.0" layoutY="44.0" prefHeight="40.0" prefWidth="285.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="104.0" AnchorPane.topAnchor="30.0" />
-      <TextField layoutX="100.0" layoutY="80.0" prefHeight="40.0" prefWidth="285.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="104.0" AnchorPane.topAnchor="80.0" />
-      <Button layoutX="400.0" layoutY="44.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="OK" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="30.0">
+      <TextField fx:id="txtPip" layoutX="100.0" layoutY="44.0" prefHeight="40.0" prefWidth="285.0" style="-fx-background-color: E2E2E2;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="104.0" AnchorPane.topAnchor="30.0" />
+      <TextField fx:id="txtPhone" layoutX="100.0" layoutY="80.0" prefHeight="40.0" prefWidth="285.0" style="-fx-background-color: E2E2E2;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="104.0" AnchorPane.topAnchor="80.0" />
+      <Button fx:id="btnOk" layoutX="400.0" layoutY="44.0" mnemonicParsing="false" onAction="#okBtnOn" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: F7BCD5;" text="OK" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="30.0">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="400.0" layoutY="80.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="Відміна" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="80.0">
+      <Button fx:id="btnCancel" layoutX="400.0" layoutY="80.0" mnemonicParsing="false" onAction="#cancelBtnOn" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: F7BCD5;" text="Відміна" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="80.0">
          <font>
             <Font size="14.0" />
          </font>

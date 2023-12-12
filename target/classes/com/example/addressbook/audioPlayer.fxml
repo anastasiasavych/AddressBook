@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="254.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.addressbook.AudioController">
+   <children>
+      <Label fx:id="label_audio" layoutX="140.0" layoutY="21.0" prefHeight="64.0" prefWidth="517.0" text="Audio Player">
+         <padding>
+            <Insets left="90.0" />
+         </padding>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="audioProgress" layoutY="96.0" prefHeight="31.0" prefWidth="770.0" progress="0.0" />
+      <Button layoutX="28.0" layoutY="158.0" mnemonicParsing="false" onAction="#play" prefHeight="50.0" prefWidth="122.0" text="PLAY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="175.0" layoutY="158.0" mnemonicParsing="false" onAction="#pause" prefHeight="50.0" prefWidth="122.0" text="PAUSE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="322.0" layoutY="158.0" mnemonicParsing="false" onAction="#next" prefHeight="50.0" prefWidth="122.0" text="NEXT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="469.0" layoutY="158.0" mnemonicParsing="false" onAction="#previous" prefHeight="50.0" prefWidth="122.0" text="PREVIOUS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Slider fx:id="volume" layoutX="616.0" layoutY="177.0" />
+   </children>
+</AnchorPane>
