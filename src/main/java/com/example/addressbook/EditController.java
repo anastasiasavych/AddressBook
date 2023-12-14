@@ -61,7 +61,6 @@ public class EditController {
     }
 
     public void initialize() {
-        // Створення нового об'єкта Person
         person = new Person("", "");
         txtPip.textProperty().bindBidirectional(person.pipProperty());
         txtPhone.textProperty().bindBidirectional(person.phoneProperty());

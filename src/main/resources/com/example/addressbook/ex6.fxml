@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.addressbook.Ex6">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.addressbook.Ex6">
    <children>
       <VBox prefHeight="480.0" prefWidth="200.0">
          <children>
@@ -56,7 +57,7 @@
             </CheckBox>
             <Button fx:id="btnAnswer" mnemonicParsing="false" onAction="#checkBoxAnswer" prefHeight="27.0" prefWidth="82.0" text="Відповісти">
                <VBox.margin>
-                  <Insets left="60.0" top="30.0" />
+                  <Insets left="60.0" top="15.0" />
                </VBox.margin>
             </Button>
             <Label fx:id="lblAnswerCheck" prefHeight="96.0" prefWidth="174.0" text="Label">
@@ -118,9 +119,9 @@
                   <Insets left="20.0" top="30.0" />
                </VBox.margin>
             </ComboBox>
-            <Label fx:id="lblAnswerCombo" prefHeight="47.0" prefWidth="174.0" text="Label">
+            <Label fx:id="lblAnswerCombo" prefHeight="55.0" prefWidth="174.0" text="Label">
                <VBox.margin>
-                  <Insets left="25.0" top="40.0" />
+                  <Insets left="25.0" top="20.0" />
                </VBox.margin>
             </Label>
          </children>

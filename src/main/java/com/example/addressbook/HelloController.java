@@ -145,10 +145,8 @@ public class HelloController {
             Parent root = loader.load();
             EditController editController = loader.getController();
 
-            // Ініціалізую mainController
             editController.setHelloController(this);
 
-            // Встановлю addressBookImpl
             editController.setAddressBook(addressBookImpl);
 
             Stage newStage = new Stage();
@@ -166,7 +164,6 @@ public class HelloController {
                 Person newPerson = editController.getPerson();
                 if (newPerson != null) {
                     addressBookImpl.add(newPerson);
-                    // Оновлюю таблицю
                     updateTable();
                 }
             }
